@@ -29,7 +29,7 @@
         </div>
 
         <div class="footer-bottom-content relative mt-20 lg:px-96 px-10 ">
-            <div class="border border-y-[0.1px] lg:px-[80vh] 2xl:px-[80vh] px-[10vh] border-gray-300"></div>
+            <div class="border border-y-[0.1px]  border-gray-300"></div>
             <div class="content-flex py-5">
                 <div class="flex  flex-wrap text-center justify-center lg:justify-between items-center">
                     <div class="grup-1 flex  gap-4">

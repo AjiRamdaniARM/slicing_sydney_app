@@ -60,8 +60,8 @@
         <div id="overlay" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden"></div>
         <!-- Sidebar -->
         <div id="sidebar"
-            class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
-            <div class="relative w-64 h-full p-4">
+            class="fixed inset-y-0 right-0 w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+            <div class="relative w-full h-full p-4">
                 <button id="close-sidebar" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">

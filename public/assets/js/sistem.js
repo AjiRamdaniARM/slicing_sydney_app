@@ -53,25 +53,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Menampilkan sidebar dan overlay saat menu icon diklik
     menuIcon.addEventListener('click', () => {
-        sidebar.classList.remove('translate-x-full');
-        sidebar.classList.add('translate-x-0');
-        overlay.classList.add('active');
+        sidebar.classList.add('show'); // Menampilkan sidebar
+        overlay.classList.add('active'); // Menampilkan overlay
         document.body.style.overflow = 'hidden'; // Menonaktifkan scroll pada body
     });
 
     // Menutup sidebar dan overlay saat tombol tutup diklik
     closeSidebar.addEventListener('click', () => {
-        sidebar.classList.remove('translate-x-0');
-        sidebar.classList.add('translate-x-full');
-        overlay.classList.remove('active');
+        sidebar.classList.remove('show'); // Menyembunyikan sidebar
+        overlay.classList.remove('active'); // Menyembunyikan overlay
         document.body.style.overflow = ''; // Mengaktifkan scroll pada body
     });
 
     // Menutup sidebar dan overlay jika klik di luar area sidebar
     overlay.addEventListener('click', () => {
-        sidebar.classList.remove('translate-x-0');
-        sidebar.classList.add('translate-x-full');
-        overlay.classList.remove('active');
+        sidebar.classList.remove('show'); // Menyembunyikan sidebar
+        overlay.classList.remove('active'); // Menyembunyikan overlay
         document.body.style.overflow = ''; // Mengaktifkan scroll pada body
     });
 });

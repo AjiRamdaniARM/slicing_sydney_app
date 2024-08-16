@@ -1,0 +1,98 @@
+/* Menghilangkan default dropdown background */
+select {
+    background-color: transparent;
+    padding-left: 2rem; /* Tambahkan padding kiri pada select */
+    padding-right: 1rem; /* Tambahkan padding kanan pada select */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+/* Custom dropdown arrow, jika diperlukan */
+select::-ms-expand {
+    display: none;
+}
+
+/* Menyetting agar opsi dropdown juga transparan */
+select option {
+    background-color: transparent; /* Buat opsi dropdown transparan */
+    color: #000; /* Warna teks opsi */
+    padding-left: 10px; /* Tambahkan padding kiri agar teks tidak mepet */
+    border: none;
+}
+
+.hero {
+    background-image: url('../svg/bg-hero.svg');
+    width: 100%;
+    height: auto;
+    min-height: 100vh; /* Sesuaikan tinggi minimal sesuai kebutuhan */
+}
+
+/* Styling dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Styling the button to open dropdown */
+.dropdown-button {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling dropdown menu */
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #ddd; /* Optional: Add border if needed */
+}
+
+/* Hide dropdown menu by default */
+.dropdown-menu.hidden {
+    display: none;
+}
+
+/* Styling each item in the dropdown */
+.dropdown-item {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* Ensure images inside dropdown items are aligned */
+.dropdown-item img {
+    display: block;
+}
+/* Tambahkan efek blur pada navbar */
+.navbar-blur {
+    backdrop-filter: blur(10px); /* Sesuaikan kekuatan blur sesuai kebutuhan */
+    background-color: rgba(255, 255, 255, 0.082); /* Warna latar belakang dengan transparansi */
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+/* Transisi untuk sidebar */
+/* Transisi untuk sidebar */
+.sidebar-enter {
+    transform: translateX(100%);
+}
+
+.sidebar-enter-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-exit {
+    transform: translateX(0);
+}
+
+.sidebar-exit-active {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Mengaktifkan overlay */
+#overlay.active {
+    display: block;
+}

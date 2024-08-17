@@ -72,3 +72,22 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = ''; // Mengaktifkan scroll pada body
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const minusBtn = document.querySelector('.minus');
+    const plusBtn = document.querySelector('.plus');
+    const inputField = document.querySelector('.number-input input[type="number"]');
+
+    minusBtn.addEventListener('click', function() {
+        let currentValue = parseInt(inputField.value);
+        if (currentValue > parseInt(inputField.min)) {
+            inputField.value = currentValue - parseInt(inputField.step);
+        }
+    });
+
+    plusBtn.addEventListener('click', function() {
+        let currentValue = parseInt(inputField.value);
+        if (currentValue < parseInt(inputField.max)) {
+            inputField.value = currentValue + parseInt(inputField.step);
+        }
+    });
+});

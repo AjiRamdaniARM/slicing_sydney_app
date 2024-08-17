@@ -6,12 +6,20 @@
                 <img class="w-[211.68px]" src="{{ asset('assets/image/logo_sydney.png') }}" alt="">
             </div>
             <div class="list-div lg:flex gap-[12px] items-center kanit-regular">
-                <a href="" class="active text-white font-bold">Home</a>
-                <a href="" class="text-white/50">Lucky Number</a>
-                <a href="" class="text-white/50">Previous Result</a>
-                <a href="" class="text-white/50">Statistic</a>
-                <a href="" class="text-white/50">About Us</a>
-                <a href="" class="text-white/50">How To Play</a>
+                <a href="{{ url('/') }}"
+                    class="{{ request()->routeIs('home.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Home</a>
+                <a href="{{ route('luky.index') }}"
+                    class="{{ request()->routeIs('luky.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Lucky
+                    Number</a>
+                <a href="{{ route('previousresult.index') }}"
+                    class="{{ request()->routeIs('previousresult.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Previous
+                    Result</a>
+                <a href="{{ route('statistic.index') }}"
+                    class="{{ request()->routeIs('statistic.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Statistic</a>
+                <a href="{{ route('about.index') }}"
+                    class="{{ request()->routeIs('about.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">About
+                    Us</a>
+
                 <div class="box-select-bahasa relative">
                     <select class="appearance-none w-full bg-transparent border-none text-white pl-8 pr-4 py-2">
                         <option value="" data-img-src="{{ asset('assets/svg/united.svg') }}">&nbsp;English
@@ -57,10 +65,10 @@
             </div>
         </div>
         <!-- Overlay -->
-        <div id="overlay" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden"></div>
+        <div id="overlay" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden z-50"></div>
         <!-- Sidebar -->
         <div id="sidebar"
-            class="fixed inset-y-0 right-0 w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+            class="fixed  right-0 w-64 bg-[#011335] transform translate-x-full transition-transform duration-300 ease-in-out z-50">
             <div class="relative w-full h-full p-4">
                 <button id="close-sidebar" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -69,13 +77,28 @@
                         </path>
                     </svg>
                 </button>
+                <div class="asset-logo">
+                    <img class="w-[140.68px]" src="{{ asset('assets/image/logo_sydney.png') }}" alt="">
+                </div>
                 <ul class="space-y-4 mt-8">
-                    <li><a href="" class="text-gray-900 font-bold">Home</a></li>
-                    <li><a href="" class="text-gray-600">Lucky Number</a></li>
-                    <li><a href="" class="text-gray-600">Previous Result</a></li>
-                    <li><a href="" class="text-gray-600">Statistic</a></li>
-                    <li><a href="" class="text-gray-600">About Us</a></li>
-                    <li><a href="" class="text-gray-600">How To Play</a></li>
+                    <li><a href="{{ url('/') }}"
+                            class="{{ request()->routeIs('home.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Home</a>
+                    </li>
+                    <li> <a href="{{ route('luky.index') }}"
+                            class="{{ request()->routeIs('luky.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Lucky
+                            Number</a></li>
+                    <li><a href="{{ route('previousresult.index') }}"
+                            class="{{ request()->routeIs('previousresult.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Previous
+                            Result</a></li>
+                    <li> <a href="{{ route('statistic.index') }}"
+                            class="{{ request()->routeIs('statistic.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">Statistic</a>
+                    </li>
+                    <li> <a href="{{ route('about.index') }}"
+                            class="{{ request()->routeIs('about.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">About
+                            Us</a></li>
+                    <li> <a href="{{ route('howtoplay.index') }}"
+                            class="{{ request()->routeIs('howtoplay.index') ? ' active text-white font-bold' : 'text-white/50 ' }}">How
+                            To Play</a></li>
                 </ul>
             </div>
         </div>

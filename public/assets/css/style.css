@@ -28,6 +28,12 @@ select option {
     height: auto;
     min-height: 100vh; /* Sesuaikan tinggi minimal sesuai kebutuhan */
 }
+.hero-scetion-page-luky {
+    background-image: url('../svg/bg-hero-luky.svg');
+    width: 100%;
+
+    /* Sesuaikan tinggi minimal sesuai kebutuhan */
+}
 
 /* Styling dropdown container */
 .dropdown {
@@ -85,4 +91,149 @@ select option {
 /* Mengaktifkan overlay */
 #overlay.active {
     display: block; /* Menampilkan overlay */
+}
+.bar {
+    border: 0.8px solid #4A4A4A;
+    border-top: 0.8px solid #4A4A4A;
+    border-bottom: 0.8px solid #4A4A4A;
+    border-left: 0;
+    border-right: 0;
+}
+
+.number-input {
+    display: inline-flex;
+    align-items: center;
+}
+.number-input .minus  {
+    background-color: #474747;
+}
+.number-input .plus  {
+    background-color: #DE1E35;
+}
+
+.number-input button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-input input[type="number"] {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    width: 80px;
+    height: 45px;
+    font-size: 16px;
+    -moz-appearance: textfield;
+}
+
+.number-input input[type="number"]::-webkit-outer-spin-button,
+.number-input input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --vs-primary: 29 92 255;
+}
+
+/*Dialog Styles*/
+dialog {
+  padding: 1rem 3rem;
+  background: white;
+  max-width: 400px;
+  padding-top: 2rem;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  -webkit-animation: fadeIn 1s ease both;
+          animation: fadeIn 1s ease both;
+}
+dialog::-webkit-backdrop {
+  -webkit-animation: fadeIn 1s ease both;
+          animation: fadeIn 1s ease both;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+dialog::backdrop {
+  -webkit-animation: fadeIn 1s ease both;
+          animation: fadeIn 1s ease both;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+dialog .x {
+  filter: grayscale(1);
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transition: ease filter, transform 0.3s;
+  cursor: pointer;
+  transform-origin: center;
+}
+dialog .x:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+dialog h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+dialog p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
+}
+dialog p a:visited {
+  color: rgb(var(--vs-primary));
+}
+
+button.primary {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #fff !important;
+  background: rgb(var(--vs-primary)/100%);
+  padding: 13px 25px;
+  border-radius: 17px;
+  transition: background-color 0.1s ease;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -10px rgb(var(--vs-primary)/50%);
+}
+button.primary:hover {
+  box-shadow: 0 20px 20px -10px rgb(var(--vs-primary)/50%);
+  transform: translateY(-5px);
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

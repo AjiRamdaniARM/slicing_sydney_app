@@ -6,13 +6,84 @@
                     {{-- === content section hreo === --}}
                     <div class="title-page-content flex flex-col justify-center items-center gap-10 py-44">
                         <h1 class="text-white kanit-medium text-7xl text-center">History Checker</h1>
-                        <div class="img-lucky-draw hidden lg:block">
-                            <img class="w-full" src="{{ asset('assets/image/number_cheker.png') }}" alt="LukyDraw">
+                        <div class="img-lucky-draw lg:block">
+                            <div
+                                class="container mx-auto py-10 px-4 sm:px-10 md:px-20 lg:px-44  rounded-[13.87px] border-[6.94px] border-blue-500 shadow-[#1876D0] shadow-xl bg-gradient-to-r from-blue-400/50 to-blue-800/50">
+                                <h1 class="text-center text-xl sm:text-2xl font-bold text-white">Select 4 Numbers</h1>
+
+                                <div class="flex justify-center mt-4 space-x-2 flex-wrap">
+                                    <!-- Number Circles -->
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        0
+                                    </div>
+                                    <!-- Repeat for other numbers -->
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        1
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        2
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        3
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        4
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        5
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        6
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        7
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        8
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        9
+                                    </div>
+                                    <!-- Add more numbers as needed -->
+                                </div>
+
+                                <div class="flex justify-center mt-8 space-x-2 sm:space-x-4 flex-wrap">
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        1</div>
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        2</div>
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        -</div>
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        -</div>
+                                    <div class="grup flex flex-wrap gap-4 pt-10 lg:pt-0 justify-center items-center">
+                                        <button
+                                            class="bg-red-500 text-white rounded-lg hover:scale-105 transition-all focus:scale-105 px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-3 font-bold">Check
+                                            Numbers</button>
+                                        <button
+                                            class="bg-red-500 text-white rounded-lg hover:scale-105 transition-all focus:scale-105 px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-3 font-bold">Reset
+                                            Number</button>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="img-lucky-draw block lg:hidden">
-                            <img class="w-full" src="{{ asset('assets/image/number_mobile_cheker.png') }}"
-                                alt="LukyDraw">
-                        </div>
+
+
                     </div>
                 </div>
             </section>

@@ -6,13 +6,84 @@
                     {{-- === content section hreo === --}}
                     <div class="title-page-content flex flex-col justify-center items-center gap-10 py-44">
                         <h1 class="text-white kanit-medium text-7xl text-center">History Checker</h1>
-                        <div class="img-lucky-draw hidden lg:block">
-                            <img class="w-full" src="{{ asset('assets/image/number_cheker.png') }}" alt="LukyDraw">
+                        <div class="img-lucky-draw lg:block">
+                            <div
+                                class="container mx-auto py-10 px-4 sm:px-10 md:px-20 lg:px-44  rounded-[13.87px] border-[6.94px] border-blue-500 shadow-[#1876D0] shadow-xl bg-gradient-to-r from-blue-400/50 to-blue-800/50">
+                                <h1 class="text-center text-xl sm:text-2xl font-bold text-white">Select 4 Numbers</h1>
+
+                                <div class="flex justify-center mt-4 space-x-2 flex-wrap">
+                                    <!-- Number Circles -->
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        0
+                                    </div>
+                                    <!-- Repeat for other numbers -->
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        1
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        2
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        3
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        4
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        5
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        6
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        7
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        8
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] lg:h-[100px] lg:w-[100px] rounded-full border-[6px] sm:border-[8px] lg:border-[9px] border-red-500 bg-white text-red-500 text-xl sm:text-2xl font-bold">
+                                        9
+                                    </div>
+                                    <!-- Add more numbers as needed -->
+                                </div>
+
+                                <div class="flex justify-center mt-8 space-x-2 sm:space-x-4 flex-wrap">
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        1</div>
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        2</div>
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        -</div>
+                                    <div
+                                        class="w-16 h-10 sm:w-20 sm:h-14 lg:w-24 lg:h-16 bg-white rounded-lg text-center font-bold text-lg sm:text-xl p-2 sm:p-4">
+                                        -</div>
+                                    <div class="grup flex flex-wrap gap-4 pt-10 lg:pt-0 justify-center items-center">
+                                        <button
+                                            class="bg-red-500 text-white rounded-lg hover:scale-105 transition-all focus:scale-105 px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-3 font-bold">Check
+                                            Numbers</button>
+                                        <button
+                                            class="bg-red-500 text-white rounded-lg hover:scale-105 transition-all focus:scale-105 px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-3 font-bold">Reset
+                                            Number</button>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="img-lucky-draw block lg:hidden">
-                            <img class="w-full" src="{{ asset('assets/image/number_mobile_cheker.png') }}"
-                                alt="LukyDraw">
-                        </div>
+
+
                     </div>
                 </div>
             </section>
@@ -66,55 +137,244 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="bar bg-[#1A1A1A] py-10 w-full  text-center px-10 lg:px-44">
-                        <div class="list flex justify-between items-center text-white/50 kanit-medium">
-                            <div class="text-start kanit-regular text-[10px] lg text-white">
+                        <div class="list flex flex-wrap justify-between items-center text-white/50 kanit-medium">
+                            <div class="text-start kanit-regular text-2xl py-3 lg:text-1xl text-white">
                                 <div class="list">2046</div>
                                 <div class="list">Mon, 21 May 2024</div>
                                 <div class="list">11:00 (GMT+7)</div>
                             </div>
                             <div>
-                                <img class="lg:w-96 w-44" src="{{ asset('assets/image/23.png') }}" alt="">
+
+                                <div
+                                    class="w-full h-full border-[6.94px] border-blue-500 shadow-[#1876D0] shadow-lg bg-gradient-to-r from-blue-400/50 to-blue-800/50 text-white p-4 rounded-lg">
+                                    <div class="flex items-center justify-between w-full mb-4">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            First Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between w-full mb-4">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            Second Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            Third Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img class="lg:w-10 w-5" src="{{ asset('assets/image/button-video.png') }}"
+                            <div class="py-10 lg:py-0 mx-auto lg:mx-0">
+                                <img class="lg:w-10 w-10" src="{{ asset('assets/image/button-video.png') }}"
                                     alt="">
                             </div>
                         </div>
 
                     </div>
-
                     <div class="bar  py-10 w-full  text-center px-10 lg:px-44">
-                        <div class="list flex justify-between items-center text-white/50 kanit-medium">
-                            <div class="text-start kanit-regular text-[10px] lg text-white">
+                        <div class="list flex flex-wrap justify-between items-center text-white/50 kanit-medium">
+                            <div class="text-start kanit-regular text-2xl py-3 lg:text-1xl text-white">
                                 <div class="list">2046</div>
                                 <div class="list">Mon, 21 May 2024</div>
                                 <div class="list">11:00 (GMT+7)</div>
                             </div>
                             <div>
-                                <img class="lg:w-96 w-44" src="{{ asset('assets/image/24.png') }}" alt="">
+
+                                <div
+                                    class="w-full h-full border-[6.94px] border-blue-500 shadow-[#1876D0] shadow-lg bg-gradient-to-r from-blue-400/50 to-blue-800/50 text-white p-4 rounded-lg">
+                                    <div class="flex items-center justify-between w-full mb-4">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            First Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between w-full mb-4">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            Second Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            Third Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img class="lg:w-10 w-5" src="{{ asset('assets/image/button-video.png') }}"
+                            <div class="py-10 lg:py-0 mx-auto lg:mx-0">
+                                <img class="lg:w-10 w-10" src="{{ asset('assets/image/button-video.png') }}"
                                     alt="">
                             </div>
                         </div>
 
                     </div>
-
 
                     <div class="bar bg-[#1A1A1A] py-10 w-full  text-center px-10 lg:px-44">
-                        <div class="list flex justify-between items-center text-white/50 kanit-medium">
-                            <div class="text-start kanit-regular text-[10px] lg text-white">
+                        <div class="list flex flex-wrap justify-between items-center text-white/50 kanit-medium">
+                            <div class="text-start kanit-regular text-2xl py-3 lg:text-1xl text-white">
                                 <div class="list">2046</div>
                                 <div class="list">Mon, 21 May 2024</div>
                                 <div class="list">11:00 (GMT+7)</div>
                             </div>
                             <div>
-                                <img class="lg:w-96 w-44" src="{{ asset('assets/image/25.png') }}" alt="">
+
+                                <div
+                                    class="w-full h-full border-[6.94px] border-blue-500 shadow-[#1876D0] shadow-lg bg-gradient-to-r from-blue-400/50 to-blue-800/50 text-white p-4 rounded-lg">
+                                    <div class="flex items-center justify-between w-full mb-4">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            First Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between w-full mb-4">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            Second Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between w-full">
+                                        <p
+                                            class="kanit-medium px-5 bg-gradient-to-r from-transparent via-blue-500 to-transparent ">
+                                            Third Result</p>
+                                        <div class="flex items-center space-x-2">
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                6</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                8</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                2</div>
+                                            <div
+                                                class="w-10 h-10 rounded-full  flex items-center border-[5px] justify-center border-red-500 bg-white text-red-500 font-bold">
+                                                0</div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <img class="lg:w-10 w-5" src="{{ asset('assets/image/button-video.png') }}"
+                            <div class="py-10 lg:py-0 mx-auto lg:mx-0">
+                                <img class="lg:w-10 w-10" src="{{ asset('assets/image/button-video.png') }}"
                                     alt="">
                             </div>
                         </div>
@@ -123,40 +383,9 @@
 
 
 
-                    <div class="bar  py-10 w-full  text-center px-10 lg:px-44">
-                        <div class="list flex justify-between items-center text-white/50 kanit-medium">
-                            <div class="text-start kanit-regular text-[10px] lg text-white">
-                                <div class="list">2046</div>
-                                <div class="list">Mon, 21 May 2024</div>
-                                <div class="list">11:00 (GMT+7)</div>
-                            </div>
-                            <div>
-                                <img class="lg:w-96 w-44" src="{{ asset('assets/image/23.png') }}" alt="">
-                            </div>
-                            <div>
-                                <img class="lg:w-10 w-5" src="{{ asset('assets/image/button-video.png') }}"
-                                    alt="">
-                            </div>
-                        </div>
 
-                    </div>
-                    <div class="bar bg-[#1A1A1A] py-10 w-full  text-center px-10 lg:px-44">
-                        <div class="list flex justify-between items-center text-white/50 kanit-medium">
-                            <div class="text-start kanit-regular text-[10px] lg text-white">
-                                <div class="list">2046</div>
-                                <div class="list">Mon, 21 May 2024</div>
-                                <div class="list">11:00 (GMT+7)</div>
-                            </div>
-                            <div>
-                                <img class="lg:w-96 w-44" src="{{ asset('assets/image/23.png') }}" alt="">
-                            </div>
-                            <div>
-                                <img class="lg:w-10 w-5" src="{{ asset('assets/image/button-video.png') }}"
-                                    alt="">
-                            </div>
-                        </div>
 
-                    </div>
+
                     <br>
                     <a href="{{ route('next.index') }}"
                         class="px-10 py-4 text-white kanit-medium hover:scale-105 transition-all focus:scale-105 bg-red-500">See

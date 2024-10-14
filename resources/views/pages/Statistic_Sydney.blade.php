@@ -58,21 +58,138 @@
                         </div>
                     </div>
 
+                    <div class="bar  bg-[#1A1A1A] py-10 lg:px-0  w-full ">
+                        <div class="flex flex-wrap justify-center items-center gap-4">
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">0</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">2</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">3</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">4</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">5</span>
+                                </div>
+                                <div class="relative w-24 h-8 rounded-md bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-2xl">48 X</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">6</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">7</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">8</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
+                            <div class="flex flex-col justify-center items-center gap-4 mt-4">
+                                <div
+                                    class="relative w-24 h-24 rounded-full bg-red-500 flex justify-center items-center">
+                                    <span class="text-white font-bold text-5xl">9</span>
+                                </div>
+                                <div class="text-white font-bold text-xl">46 X</div>
+                            </div>
 
 
+                        </div>
 
 
-
-                    <div
-                        class="bar  bg-[#1A1A1A] py-10 lg:px-0  w-full flex justify-center place-items-end gap-10 text-center">
-                        <img class="w-full px-10 lg:px-44" src="{{ asset('assets/image/number_grup.png') }}"
-                            alt="">
                     </div>
 
-                    <div class="container py-20">
+                    <div class="container py-10 lg:py-28">
                         <div class="chart">
-                            <img class="w-full  px-10 lg:px-44 " src="{{ asset('assets/image/chart.png') }}"
-                                alt="">
+                            <div class="simple-bar-chart ">
+                                <div class="item " style="--clr: #E0393E; --val: 80">
+                                    <div class="label flex justify-center items-center py-5">
+                                        <div
+                                            class="w-10 h-10 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-28 lg:h-28 rounded-full flex items-center border-[5px] sm:border-[7px] md:border-[8px] lg:border-[10px] justify-center text-xl sm:text-2xl md:text-3xl lg:text-3xl border-red-500 bg-white text-red-500 font-bold">
+                                            8
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="--clr: #E0393E; --val: 50">
+                                    <div class="label flex justify-center items-center py-5">
+                                        <div
+                                            class="w-10 h-10 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-28 lg:h-28 rounded-full flex items-center border-[5px] sm:border-[7px] md:border-[8px] lg:border-[10px] justify-center text-xl sm:text-2xl md:text-3xl lg:text-3xl border-red-500 bg-white text-red-500 font-bold">
+                                            8
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="item" style="--clr: #E0393E; --val: 100">
+                                    <div class="label flex justify-center items-center py-5">
+                                        <div
+                                            class="w-10 h-10 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-28 lg:h-28 rounded-full flex items-center border-[5px] sm:border-[7px] md:border-[8px] lg:border-[10px] justify-center text-xl sm:text-2xl md:text-3xl lg:text-3xl border-red-500 bg-white text-red-500 font-bold">
+                                            8
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="--clr: #E0393E; --val: 15">
+                                    <div class="label flex justify-center items-center py-5">
+                                        <div
+                                            class="w-10 h-10 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-28 lg:h-28 rounded-full flex items-center border-[5px] sm:border-[7px] md:border-[8px] lg:border-[10px] justify-center text-xl sm:text-2xl md:text-3xl lg:text-3xl border-red-500 bg-white text-red-500 font-bold">
+                                            8
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="--clr: #E0393E; --val: 1">
+                                    <div class="label flex justify-center items-center py-5">
+                                        <div
+                                            class="w-10 h-10 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-28 lg:h-28 rounded-full flex items-center border-[5px] sm:border-[7px] md:border-[8px] lg:border-[10px] justify-center text-xl sm:text-2xl md:text-3xl lg:text-3xl border-red-500 bg-white text-red-500 font-bold">
+                                            8
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="--clr: #E0393E; --val: 90">
+                                    <div class="label flex justify-center items-center py-5">
+                                        <div
+                                            class="w-10 h-10 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-28 lg:h-28 rounded-full flex items-center border-[5px] sm:border-[7px] md:border-[8px] lg:border-[10px] justify-center text-xl sm:text-2xl md:text-3xl lg:text-3xl border-red-500 bg-white text-red-500 font-bold">
+                                            8
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
